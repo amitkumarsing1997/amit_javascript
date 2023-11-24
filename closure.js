@@ -12,18 +12,21 @@
 // }
 // x()
 
-function x(){
-    var a=7
-    function y(){
-        console.log(a);
-    }
-    return y
-}
-var z=x();  // after running this line x is gone means x execution context is gone from call stack.
-             //all the variable and function gone
-             //now we return function y now it is out of x scope and assign to variable z 
+
+
+
+// function x(){
+//     var a=7
+//     function y(){
+//         console.log(a);
+//     }
+//     return y
+// }
+// var z=x();  // after running this line x is gone means x execution context is gone from call stack.
+//              //all the variable and function gone
+//              //now we return function y now it is out of x scope and assign to variable z 
              
-z()     // so how it prints a=7 while x is gone .here closure comes in picture.so still this y function remember its lexical scope where is coming
+// z()     // so how it prints a=7 while x is gone .here closure comes in picture.so still this y function remember its lexical scope where is coming
      // so basically if we return y it only not return y but function along with lexical scope that is closure return
 
 
@@ -43,13 +46,16 @@ function z1(){
     }
     b=2000
     x1()
-   // b=3000  // uncomment this and look what is going 
+    //b=3000  // uncomment this and look what is going 
    
 }
  y1()
 }
 var w=z1
 w()
+
+
+
 
 // Uses of closures
     // -> Module design Pattern .
